@@ -15,7 +15,7 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-    @PostMapping("/save")
+    @PostMapping("/save customer")
     public String saveCustomer(@RequestBody CustomerDTO customerDTO){
         customerService.saveCustomer(customerDTO);
         return "saved";
